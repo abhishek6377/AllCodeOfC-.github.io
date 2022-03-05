@@ -1,0 +1,56 @@
+#include<iostream.h>
+#include<string.h>
+#include<conio.h>
+class binary{
+string ch= s;
+public:
+void read(void);
+void chk_bin(void);
+void one_compliment(void);
+void display(void);
+
+};
+void binary ::read(void){
+cout<<"Enter a binary number"<<endl;
+cin>> s;
+}
+void binary:: chk_bin(void){
+for(int i=0;i< s.length();i++){
+if(s.at(i)!='0' && s.at(i)!='1'){
+cout<<"Incorrecct binary format"<<endl;
+exit(0);
+}
+}
+}
+void binary::ones_compliment(void){
+
+
+for(int i=0;i<s.length();i++){
+if(s.at(i)=='0')
+{
+s.at(i)='1';
+}
+else{
+s.at(i)='0';
+}
+
+}
+}
+void binary :: display(void){
+cout<<"Displaying your binary numberr"<<endl;
+for(int i=0;i<s.length();i++){
+cout<<s.at(i);
+}
+cout<<endl;
+}
+void main()
+{
+clrscr();
+binary b;
+b.read();
+b.chk_bin();
+b.display();
+b.ones_compliment();
+b.display();
+getch();
+}

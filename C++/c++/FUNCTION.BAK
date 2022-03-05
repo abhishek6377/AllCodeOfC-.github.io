@@ -1,0 +1,13 @@
+#include<iostream.h>
+#include<conio.h>
+int a=12,b=56,c;
+void add(){
+c=a+b;
+}
+void main()
+{
+clrscr();
+add();
+cout<<c;
+getch();
+}
